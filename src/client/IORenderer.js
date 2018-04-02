@@ -9,9 +9,9 @@ import Ship from '../common/Ship';
 
 
 /**
- * Renderer for the Spaaace client - based on Pixi.js
+ * Renderer for the IO client - based on Pixi.js
  */
-export default class SpaaaceRenderer extends Renderer {
+export default class IORenderer extends Renderer {
 
     get ASSETPATHS(){
         return {

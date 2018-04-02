@@ -1,15 +1,15 @@
 import Howler from 'howler'; // eslint-disable-line no-unused-vars
 import ClientEngine from 'lance/ClientEngine';
-import SpaaaceRenderer from '../client/SpaaaceRenderer';
+import IORenderer from '../client/IORenderer';
 import KeyboardControls from 'lance/controls/KeyboardControls';
 import MobileControls from './MobileControls';
 import Ship from '../common/Ship';
 import Utils from '../common/Utils';
 
-export default class SpaaaceClientEngine extends ClientEngine {
+export default class IOClientEngine extends ClientEngine {
 
     constructor(gameEngine, options) {
-        super(gameEngine, options, SpaaaceRenderer);
+        super(gameEngine, options, IORenderer);
     }
 
     start() {

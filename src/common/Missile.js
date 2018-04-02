@@ -1,7 +1,7 @@
 import Serializer from 'lance/serialize/Serializer';
 import DynamicObject from 'lance/serialize/DynamicObject';
 import PixiRenderableComponent from 'lance/render/pixi/PixiRenderableComponent';
-import Renderer from '../client/SpaaaceRenderer';
+import Renderer from '../client/IORenderer';
 
 export default class Missile extends DynamicObject {
 

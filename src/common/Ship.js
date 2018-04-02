@@ -1,6 +1,6 @@
 import Serializer from 'lance/serialize/Serializer';
 import DynamicObject from 'lance/serialize/DynamicObject';
-import Renderer from '../client/SpaaaceRenderer';
+import Renderer from '../client/IORenderer';
 import Utils from './Utils';
 import ShipActor from '../client/ShipActor';
 

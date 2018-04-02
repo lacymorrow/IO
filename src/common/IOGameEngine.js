@@ -6,7 +6,7 @@ import Ship from './Ship';
 import Missile from './Missile';
 import TwoVector from 'lance/serialize/TwoVector';
 
-export default class SpaaaceGameEngine extends GameEngine {
+export default class IOGameEngine extends GameEngine {
 
     constructor(options) {
         super(options);

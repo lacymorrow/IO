@@ -15,8 +15,8 @@ let requestHandler = server.listen(PORT, () => console.log(`Listening on ${ PORT
 const io = socketIO(requestHandler);
 
 // Game Server
-import MyServerEngine from './src/server/SpaaaceServerEngine.js';
-import MyGameEngine from './src/common/SpaaaceGameEngine.js';
+import MyServerEngine from './src/server/IOServerEngine.js';
+import MyGameEngine from './src/common/IOGameEngine.js';
 
 
 // Game Instances
