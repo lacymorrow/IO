@@ -113,14 +113,18 @@ export default class IORenderer extends Renderer {
         this.stage.addChild(this.bg1, this.bg2, this.bg3, this.bg4);
         this.stage.addChild(this.camera);
 
-        // this.debug= new PIXI.Graphics();
-        // this.camera.addChild(this.debug);
+        /* BEGIN DEBUG */
 
-        // this.debugText = new PIXI.Text('DEBUG', {fontFamily:"arial", fontSize: "100px", fill:"white"});
-        // this.debugText.anchor.set(0.5, 0.5);
-        // this.debugText.x = this.gameEngine.worldSettings.width/2;
-        // this.debugText.y = this.gameEngine.worldSettings.height/2;
-        // this.camera.addChild(this.debugText);
+        this.debug= new PIXI.Graphics();
+        this.camera.addChild(this.debug);
+
+        this.debugText = new PIXI.Text('DEBUG', {fontFamily:"arial", fontSize: "100px", fill:"white"});
+        this.debugText.anchor.set(0.5, 0.5);
+        this.debugText.x = this.gameEngine.worldSettings.width/2;
+        this.debugText.y = this.gameEngine.worldSettings.height/2;
+        this.camera.addChild(this.debugText);
+
+        /* END DEBUG */
 
         this.elapsedTime = Date.now();
         // debug
