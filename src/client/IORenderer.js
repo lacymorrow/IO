@@ -120,8 +120,8 @@ export default class IORenderer extends Renderer {
 
         this.debugText = new PIXI.Text('DEBUG', {fontFamily:"arial", fontSize: "100px", fill:"white"});
         this.debugText.anchor.set(0.5, 0.5);
-        this.debugText.x = this.gameEngine.worldSettings.width/2;
-        this.debugText.y = this.gameEngine.worldSettings.height/2;
+        this.debugText.x = this.viewportWidth/2;
+        this.debugText.y = this.viewportHeight/2;
         this.camera.addChild(this.debugText);
 
         /* END DEBUG */
